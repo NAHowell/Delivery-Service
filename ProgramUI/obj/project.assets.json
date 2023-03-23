@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Delivery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Delivery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Delivery.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Delivery/1.0.0": {
+      "type": "project",
+      "path": "../Delivery/Delivery.csproj",
+      "msbuildProject": "../Delivery/Delivery.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Delivery >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\13179\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\13179\\Desktop\\ElevenFifty\\codingFoundations\\reporitoryConsoleApp2\\GoldBadge\\ProgramUI\\Program.csproj",
+      "projectName": "Program",
+      "projectPath": "C:\\Users\\13179\\Desktop\\ElevenFifty\\codingFoundations\\reporitoryConsoleApp2\\GoldBadge\\ProgramUI\\Program.csproj",
+      "packagesPath": "C:\\Users\\13179\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\13179\\Desktop\\ElevenFifty\\codingFoundations\\reporitoryConsoleApp2\\GoldBadge\\ProgramUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\13179\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\13179\\Desktop\\ElevenFifty\\codingFoundations\\reporitoryConsoleApp2\\GoldBadge\\Delivery\\Delivery.csproj": {
+              "projectPath": "C:\\Users\\13179\\Desktop\\ElevenFifty\\codingFoundations\\reporitoryConsoleApp2\\GoldBadge\\Delivery\\Delivery.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

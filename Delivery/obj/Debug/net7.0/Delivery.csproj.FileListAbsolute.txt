@@ -1,0 +1,12 @@
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.csproj.AssemblyReference.cache
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.AssemblyInfoInputs.cache
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.AssemblyInfo.cs
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.csproj.CoreCompileInputs.cache
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\bin\Debug\net7.0\Delivery.deps.json
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\bin\Debug\net7.0\Delivery.dll
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\bin\Debug\net7.0\Delivery.pdb
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.dll
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\refint\Delivery.dll
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\Delivery.pdb
+C:\Users\13179\Desktop\ElevenFifty\codingFoundations\reporitoryConsoleApp2\GoldBadge\Delivery\obj\Debug\net7.0\ref\Delivery.dll
