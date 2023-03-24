@@ -20,7 +20,6 @@ namespace _Delivery
             if (oldContent != null)
             {
                 oldContent.OrderDate = newContent.OrderDate;
-                oldContent.DeliveryDate = newContent.DeliveryDate;
                 oldContent.Status = newContent.Status;
                 oldContent.ItemNumber = newContent.ItemNumber;
                 oldContent.Quantity = newContent.Quantity;

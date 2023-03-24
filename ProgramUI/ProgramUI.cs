@@ -62,11 +62,13 @@ public class ProgramUI
         Console.Clear();
         DeliveryContent newContent = new DeliveryContent();
 
-        System.Console.WriteLine("Enter the order date(mm/dd/yyyy):");
-        newContent.OrderDate = Console.ReadLine();
+        System.Console.WriteLine("Please enter the date you are ordering the product:(use this format 'yyyy-mm-dd')");
+        string date = Console.ReadLine();
+        newContent.OrderDate = date;
+        DateOnly orderDate = DateOnly.ParseExact(date, "yyyy-MM-dd",null);
 
-        System.Console.WriteLine("Enter the delivery date(mm/dd/yyyy)");
-        newContent.DeliveryDate = Console.ReadLine();
+        System.Console.WriteLine("Your order will be delivered on:");
+        System.Console.WriteLine(orderDate.AddDays(3));
 
         System.Console.WriteLine("Enter the status of the dilivery(Scheduled, EnRoute, Complete, or Canceled)");
         newContent.Status = Console.ReadLine();
@@ -90,10 +92,12 @@ public class ProgramUI
         List<DeliveryContent> ListOfContent = _DelList.GetContent();
         foreach (DeliveryContent content in ListOfContent)
         {
+            string dateOrder = content.OrderDate;
+            DateOnly delDate = DateOnly.ParseExact(dateOrder, "yyyy-MM-dd",null);
             System.Console.WriteLine($"Customer Id:{content.Id} Item Number:{content.ItemNumber} Quantity:{content.Quantity}\n" + 
                 $"Status:{content.Status}\n" +
                 $"Order Date:{content.OrderDate}\n" +
-                $"Delivery Date:{content.DeliveryDate}");
+                $"Delivery Date:{delDate.AddDays(3)}");
         }
     }
     private void UpdateDelStatus()
@@ -108,11 +112,13 @@ public class ProgramUI
 
         DeliveryContent newContent = new DeliveryContent();
 
-        System.Console.WriteLine("Enter the order date(mm/dd/yyyy):");
-        newContent.OrderDate = Console.ReadLine();
+        System.Console.WriteLine("Please enter the date you are ordering the product:(use this format 'yyyy-mm-dd')");
+        string date = Console.ReadLine();
+        newContent.OrderDate = date;
+        DateOnly orderDate = DateOnly.ParseExact(date, "yyyy-MM-dd",null);
 
-        System.Console.WriteLine("Enter the delivery date(mm/dd/yyyy)");
-        newContent.DeliveryDate = Console.ReadLine();
+        System.Console.WriteLine("Your order will be delivered on:");
+        System.Console.WriteLine(orderDate.AddDays(3));
 
         System.Console.WriteLine("Enter the status of the dilivery(Scheduled, EnRoute, Complete, or Canceled)");
         newContent.Status = Console.ReadLine();
@@ -164,9 +170,9 @@ public class ProgramUI
 
     private void SeedData()
     {
-        DeliveryContent Order1057 = new DeliveryContent("(12/13/2023)", "(12/15/2023)", "Scheduled", 16, 2, "B-1057");
-        DeliveryContent Order1023 = new DeliveryContent("(03/09/2023)", "(03/13/2023)", "Scheduled", 4, 1, "B-1023");
-        DeliveryContent Order1009 = new DeliveryContent("(01/20/2023)", "(01/23/2023)", "Complete", 7, 5, "B-1009");
+        DeliveryContent Order1057 = new DeliveryContent("2023-12-10", "Scheduled", 16, 2, "B-1057");
+        DeliveryContent Order1023 = new DeliveryContent("2023-05-03", "Scheduled", 4, 1, "B-1023");
+        DeliveryContent Order1009 = new DeliveryContent("2023-07-14", "Complete", 7, 5, "B-1009");
 
         _DelList.AddContentToList(Order1057);
         _DelList.AddContentToList(Order1023);
