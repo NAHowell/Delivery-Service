@@ -108,8 +108,25 @@ public class ProgramUI
 
         DeliveryContent newStatus = new DeliveryContent();
 
-        System.Console.WriteLine("Enter the new status of the order chosen(Scheduled, EnRoute, Complete, or Canceled):");
-        newStatus.Status = Console.ReadLine();
+        System.Console.WriteLine("Enter the order date(mm/dd/yyyy):");
+        newContent.OrderDate = Console.ReadLine();
+
+        System.Console.WriteLine("Enter the delivery date(mm/dd/yyyy)");
+        newContent.DeliveryDate = Console.ReadLine();
+
+        System.Console.WriteLine("Enter the status of the dilivery(Scheduled, EnRoute, Complete, or Canceled)");
+        newContent.Status = Console.ReadLine();
+
+        System.Console.WriteLine("Enter the item number:");
+        string ItemAsString = Console.ReadLine();
+        newContent.ItemNumber = double.Parse(ItemAsString);
+        
+        System.Console.WriteLine("Enter the quantity:");
+        string QuaAsString = Console.ReadLine();
+        newContent.Quantity = double.Parse(QuaAsString);
+        
+        System.Console.WriteLine("Enter the Id(example: 'B-1000'):");
+        newContent.Id = Console.ReadLine();
 
         bool wasUpdated = _DelList.UpdateContent(oldStatus, newStatus);
 
