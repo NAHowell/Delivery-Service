@@ -53,7 +53,7 @@ public class ProgramUI
             }
             System.Console.WriteLine("Please press any key to continue.");
             Console.ReadKey();
-            Console.Clear();
+            //Console.Clear();
         }
     }
 
@@ -103,10 +103,10 @@ public class ProgramUI
 
         System.Console.WriteLine("Enter the Id of the order you want to update the status on:");
 
-        string oldStatus = Console.ReadLine();
+        string oldId = Console.ReadLine();
         
 
-        DeliveryContent newStatus = new DeliveryContent();
+        DeliveryContent newContent = new DeliveryContent();
 
         System.Console.WriteLine("Enter the order date(mm/dd/yyyy):");
         newContent.OrderDate = Console.ReadLine();
@@ -128,7 +128,7 @@ public class ProgramUI
         System.Console.WriteLine("Enter the Id(example: 'B-1000'):");
         newContent.Id = Console.ReadLine();
 
-        bool wasUpdated = _DelList.UpdateContent(oldStatus, newStatus);
+        bool wasUpdated = _DelList.UpdateContent(oldId, newContent);
 
         if (wasUpdated)
         {
@@ -139,10 +139,11 @@ public class ProgramUI
             System.Console.WriteLine("Could not update the content....");
         }
 
+
     }
     private void RemoveDel()
     {
-        Console.Clear();
+        //Console.Clear();
         ViewAllContent();
 
         System.Console.WriteLine("Enter the Id of the delivery you want to remove(Example: B-1000):");
